@@ -22,11 +22,10 @@ body {
 
 .nav h3 {
   margin-left: 2rem;
-  font-size: large;
+  font-size: x-large;
   cursor: pointer;
   line-height: 0.5;
   font-family: "Pacifico", cursive;
-  color: crimson;
 }
 
 .navigation {
