@@ -12,7 +12,7 @@ export const Foods = () => {
     calories: "",
     protein: "",
     carbohydrates: "",
-    fat: ""
+    fat: "",
   });
 
   const foods = useSelector((state) => state.foods);
@@ -29,7 +29,7 @@ export const Foods = () => {
       calories: "",
       protein: "",
       carbohydrates: "",
-      fat: ""
+      fat: "",
     });
   };
 
@@ -124,7 +124,7 @@ export const Foods = () => {
           ))}{" "}
         </div>
       ) : (
-        <h3 className="nothing"> No Food Added </h3>
+        <h3 className="nothing"> No food added </h3>
       )}
     </div>
   );

@@ -121,7 +121,7 @@ export const Goals = () => {
           ))}{" "}
         </div>
       ) : (
-        <h3 className="nothing"> No Goal Added </h3>
+        <h3 className="nothing"> No goal added </h3>
       )}
     </div>
   );

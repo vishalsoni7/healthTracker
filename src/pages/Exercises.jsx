@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchExerciseData,
   addExerciseData,
-  deleteExerciseData
+  deleteExerciseData,
 } from "../actions";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +13,7 @@ export const Exercises = () => {
   const dispatch = useDispatch();
   const [input, setInput] = useState({
     name: "",
-    duration: ""
+    duration: "",
   });
 
   const exercises = useSelector((state) => state.exercises);
@@ -27,7 +27,7 @@ export const Exercises = () => {
     dispatch(addExerciseData(input));
     setInput({
       name: "",
-      duration: ""
+      duration: "",
     });
   };
 
@@ -82,7 +82,7 @@ export const Exercises = () => {
           ))}{" "}
         </div>
       ) : (
-        <h3 className="nothing"> No Exercises Added </h3>
+        <h3 className="nothing"> No exercise added </h3>
       )}
     </div>
   );
