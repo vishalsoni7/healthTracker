@@ -34,7 +34,11 @@ export const DashBoard = () => {
     <>
       <div className="dashboard">
         {" "}
-        <h2 className="landing-heading"> A health tracking app </h2>
+        <h2 className="landing-heading">
+          {" "}
+          See more of <br />
+          yourself in Health.{" "}
+        </h2>
         <div className="card">
           {" "}
           <div>
