@@ -1,0 +1,256 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  background-color: whitesmoke;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.nav h3 {
+  margin-left: 2rem;
+  font-size: x-large;
+  cursor: pointer;
+  line-height: 0.5;
+  font-family: "Pacifico", cursive;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.p-margin {
+  margin-right: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2c3e50;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard-child-div {
+  border-radius: 12px;
+  width: 15rem;
+  padding: 2rem;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.global-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.parent-div {
+  margin: 0 2rem;
+  border: radius 5px;
+}
+
+.parent-div h1 {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.exercise-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 12px;
+  width: 13rem;
+  margin: 1rem 2rem 1rem 0rem;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.exercise-input-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.exercise-input-div input {
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: none;
+  background: gainsboro;
+  color: #252525;
+}
+
+.exercise-input-div input:focus {
+  outline: none;
+}
+
+.exercise-input-div button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-size: 12px;
+  background-color: dodgerblue;
+  transition: all 200ms ease-in-out;
+  width: 5.5rem;
+}
+
+.exercise-input-div button:hover {
+  box-shadow: inset 0em 0em 0em 50em rgba(0, 0, 0, 0.3);
+}
+
+.goal-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 12px;
+  width: 25rem;
+  margin: 1rem 2rem 1rem 0rem;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.goal-div p {
+  margin-top: 0;
+}
+
+.food-input-div select {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  background: gainsboro;
+  color: #252525;
+  outline: none;
+}
+
+.exercise-div p {
+  margin-top: 0;
+}
+
+.food-input-div {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.food-input-div input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: gainsboro;
+  color: #252525;
+}
+
+.food-input-div button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-size: 12px;
+  background-color: dodgerblue;
+  transition: all 200ms ease-in-out;
+  width: 5.5rem;
+}
+
+.food-input-div button:hover {
+  box-shadow: inset 0em 0em 0em 50em rgba(0, 0, 0, 0.3);
+}
+
+.delete-div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.deleted-icon {
+  font-size: small;
+}
+
+.deleted-icon:hover {
+  transition: all 200ms ease-in-out;
+  color: crimson;
+  cursor: pointer;
+}
+
+.nothing {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-heading {
+  font-size: x-large;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  background: linear-gradient(to right, #252525, crimson, maroon);
+  background-size: 300% auto;
+  animation: gradientAnimation 5s linear infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes gradientAnimation {
+  100% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 70%;
+  }
+}
