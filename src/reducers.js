@@ -3,7 +3,7 @@ const initialState = {
   foods: [],
   goals: [],
   error: null,
-  loading: false
+  loading: false,
 };
 
 export const trackerReducer = (state = initialState, action) => {
@@ -15,7 +15,7 @@ export const trackerReducer = (state = initialState, action) => {
         ...state,
         exercises: payload,
         loading: false,
-        error: null
+        error: null,
       };
 
     case "FETCH_FOODS_DATA":
@@ -23,7 +23,7 @@ export const trackerReducer = (state = initialState, action) => {
         ...state,
         foods: payload,
         loading: false,
-        error: null
+        error: null,
       };
 
     case "FETCH_GOALS_DATA":
@@ -31,67 +31,67 @@ export const trackerReducer = (state = initialState, action) => {
         ...state,
         goals: payload,
         loading: false,
-        error: null
+        error: null,
       };
 
     case "FETCH_EXERCISES_FAILURE":
       return {
         ...state,
         loading: false,
-        error: "Error while fetching exercises!"
+        error: "Error while fetching exercises!",
       };
 
     case "FETCH_FOODS_FAILURE":
       return {
         ...state,
         loading: false,
-        error: "Error while fetching foods!"
+        error: "Error while fetching foods!",
       };
 
     case "FETCH_GOALS_FAILURE":
       return {
         ...state,
         loading: false,
-        error: "Error while fetching goals!"
+        error: "Error while fetching goals!",
       };
 
     case "ADD_EXERCISE":
       return {
         ...state,
-        exercises: [...state.exercises, payload]
+        exercises: [...state.exercises, payload],
       };
 
     case "ADD_FOOD":
       return {
         ...state,
-        foods: [...state.foods, payload]
+        foods: [...state.foods, payload],
       };
 
     case "ADD_GOAL":
       return {
         ...state,
-        goals: [...state.goals, payload]
+        goals: [...state.goals, payload],
       };
 
     case "FAILED_TO_ADD_EXERCISE":
       return {
         ...state,
         loading: false,
-        error: "Error while adding new exercise!"
+        error: "Error while adding new exercise!",
       };
 
     case "FAILED_TO_ADD_FOOD":
       return {
         ...state,
         loading: false,
-        error: "Error while adding new food!"
+        error: "Error while adding new food!",
       };
 
     case "FAILED_TO_ADD_GOAL":
       return {
         ...state,
         loading: false,
-        error: "Error while adding new goal!"
+        error: "Error while adding new goal!",
       };
 
     case "DELETE_EXERCISE":
@@ -101,7 +101,7 @@ export const trackerReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        exercises: updatedExercises
+        exercises: updatedExercises,
       };
 
     case "DELETE_FOOD":
@@ -111,7 +111,7 @@ export const trackerReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        foods: updatedFoods
+        foods: updatedFoods,
       };
 
     case "DELETE_GOAL":
@@ -121,28 +121,28 @@ export const trackerReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        goals: updatedGoals
+        goals: updatedGoals,
       };
 
     case "FAILED_TO_DELETE_EXERCISE":
       return {
         ...state,
         loading: false,
-        error: "Error while deleting exercise!"
+        error: "Error while deleting exercise!",
       };
 
     case "FAILED_TO_DELETE_FOOD":
       return {
         ...state,
         loading: false,
-        error: "Error while deleting food!"
+        error: "Error while deleting food!",
       };
 
     case "FAILED_TO_DELETE_GOAL":
       return {
         ...state,
         loading: false,
-        error: "Error while deleting goal!"
+        error: "Error while deleting goal!",
       };
 
     default:

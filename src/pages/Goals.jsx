@@ -94,7 +94,7 @@ export const Goals = () => {
           </select>
         </div>
 
-        <button onClick={handleAddGoal}> Add Food </button>
+        <button onClick={handleAddGoal}> Add Goal </button>
       </div>
       {goals?.length > 0 ? (
         <div className="global-div">
