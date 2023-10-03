@@ -12,7 +12,7 @@ export const Goals = () => {
     description: "",
     createdAt: "",
     calories: "",
-    status: ""
+    status: "",
   });
 
   const goals = useSelector((state) => state.goals);
@@ -29,7 +29,7 @@ export const Goals = () => {
       description: "",
       createdAt: "",
       calories: "",
-      status: ""
+      status: "",
     });
   };
 
@@ -87,7 +87,7 @@ export const Goals = () => {
 
         <div>
           <select name="status" onChange={handleInput}>
-            <option value=""> Selecet </option>
+            <option value=""> Status </option>
             <option value="In Progress"> In Progress </option>
             <option value="Achieved"> Achieved </option>
             <option value="Abandoned"> Abandoned </option>
