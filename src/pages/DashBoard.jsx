@@ -34,40 +34,45 @@ export const DashBoard = () => {
     <>
       <div className="dashboard">
         {" "}
-        <h2 className="landing-heading"> a health tracking app </h2>
+        <h2 className="landing-heading"> A health tracking app </h2>
         <div className="card">
           {" "}
-          <div className="dashboard-child-div">
-            {" "}
-            <h4> Total Calories Burned </h4>{" "}
-            <span>
+          <div>
+            <div className="dashboard-child-div">
               {" "}
-              <b> {totalBurnedCalories} </b>{" "}
-            </span>
-          </div>{" "}
-          <div className="dashboard-child-div">
-            {" "}
-            <h4> Total Calories Consumed </h4>
-            <span>
+              <h4> Total Calories Burned </h4>{" "}
+              <span>
+                {" "}
+                <b> {totalBurnedCalories} </b>{" "}
+              </span>
+            </div>{" "}
+            <div className="dashboard-child-div">
               {" "}
-              <b> {totalCaloriesConsumed} </b>{" "}
-            </span>
-          </div>{" "}
-          <div className="dashboard-child-div">
-            {" "}
-            <h4> Total Calories Goal </h4>{" "}
-            <span>
-              {" "}
-              <b> {totalCaloriesGoal} </b>{" "}
-            </span>
+              <h4> Total Calories Consumed </h4>
+              <span>
+                {" "}
+                <b> {totalCaloriesConsumed} </b>{" "}
+              </span>
+            </div>{" "}
           </div>
-          <div className="dashboard-child-div">
+          <div>
             {" "}
-            <h4> Remaining Calories to Goal </h4>{" "}
-            <span>
+            <div className="dashboard-child-div">
               {" "}
-              <b> {totalCaloriesGoal - totalCaloriesConsumed} </b>{" "}
-            </span>
+              <h4> Total Calories Goal </h4>{" "}
+              <span>
+                {" "}
+                <b> {totalCaloriesGoal} </b>{" "}
+              </span>
+            </div>
+            <div className="dashboard-child-div">
+              {" "}
+              <h4> Remaining Calories to Goal </h4>{" "}
+              <span>
+                {" "}
+                <b> {totalCaloriesGoal - totalCaloriesConsumed} </b>{" "}
+              </span>
+            </div>{" "}
           </div>
         </div>
       </div>
