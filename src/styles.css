@@ -12,6 +12,10 @@ body {
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,8 +26,7 @@ body {
 
 .nav h3 {
   margin-left: 2rem;
-  font-size: large;
-  font-weight: bold;
+  font-size: x-large;
   cursor: pointer;
   line-height: 0.5;
   font-family: "Pacifico", cursive;
@@ -98,8 +101,7 @@ body {
 }
 
 .parent-div {
-  margin: 0 2rem;
-  border: radius 5px;
+  margin: 5rem 2rem 1rem 2rem;
 }
 
 .parent-div h1 {
