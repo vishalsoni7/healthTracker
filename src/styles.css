@@ -22,10 +22,11 @@ body {
 
 .nav h3 {
   margin-left: 2rem;
-  font-size: x-large;
+  font-size: large;
   cursor: pointer;
   line-height: 0.5;
   font-family: "Pacifico", cursive;
+  color: crimson;
 }
 
 .navigation {
@@ -69,6 +70,11 @@ body {
   width: 15rem;
   padding: 2rem;
   margin: 0 2rem 2rem 0;
+  border: 1px solid gainsboro;
+  transition: all 200ms ease-in-out;
+}
+
+.dashboard-child-div:hover {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
@@ -107,13 +113,18 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 12px;
   width: 13rem;
   margin: 1rem 2rem 1rem 0rem;
   padding: 1rem;
   gap: 0.5rem;
+  border: 1px solid gainsboro;
+  transition: all 150ms ease-in-out;
+}
+
+.exercise-div:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
 .exercise-input-div {
@@ -159,13 +170,18 @@ body {
   text-align: left;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
-    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   border-radius: 12px;
   width: 25rem;
   margin: 1rem 2rem 1rem 0rem;
   padding: 1rem;
   gap: 0.5rem;
+  border: 1px solid gainsboro;
+  transition: all 150ms ease-in-out;
+}
+
+.goal-div:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
 }
 
 .goal-div p {
