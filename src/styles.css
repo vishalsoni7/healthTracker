@@ -179,6 +179,7 @@ body {
   gap: 0.5rem;
   border: 1px solid gainsboro;
   transition: all 150ms ease-in-out;
+  overflow: hidden;
 }
 
 .goal-div:hover {
@@ -188,6 +189,10 @@ body {
 
 .goal-div p {
   margin-top: 0;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-height: 3em;
+  line-height: 1.5em;
 }
 
 .food-input-div select {
