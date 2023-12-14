@@ -1,10 +1,16 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchExerciseData, fetchFoodData, fetchGoalData } from "../actions";
+import {
+  fetchExerciseData,
+  fetchFoodData,
+  fetchGoalData,
+  toggleBgMode,
+} from "../actions";
 
 export const DashBoard = () => {
   const dispatch = useDispatch();
 
+  const bg = useSelector((state) => state.bg);
   const exercises = useSelector((state) => state.exercises);
   const foods = useSelector((state) => state.foods);
   const goals = useSelector((state) => state.goals);
@@ -32,7 +38,7 @@ export const DashBoard = () => {
 
   return (
     <>
-      <div className="dashboard">
+      <div className={`dashboard ${bg ? "dark-mode" : "light-mode"}`}>
         {" "}
         <h2 className="landing-heading">
           {" "}

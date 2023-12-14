@@ -7,9 +7,13 @@ import "./styles.css";
 
 import { Route, Routes } from "react-router-dom";
 
+import { useSelector } from "react-redux";
+
 export default function App() {
+  const bg = useSelector((state) => state.bg);
+
   return (
-    <div className="App">
+    <div className={`app-container ${bg ? "dark-theme" : "light-theme"}`}>
       <Routers />
       <Routes>
         <Route path="/" element={<DashBoard />} />

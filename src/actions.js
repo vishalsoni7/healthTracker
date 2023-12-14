@@ -1,5 +1,11 @@
 import axios from "axios";
 
+export const toggleBgMode = () => {
+  return {
+    type: "TOGGLE_BG_MODE",
+  };
+};
+
 // fetch
 export const fetchExerciseData = () => async (dispatch) => {
   try {

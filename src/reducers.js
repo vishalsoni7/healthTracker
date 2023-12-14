@@ -4,12 +4,19 @@ const initialState = {
   goals: [],
   error: null,
   loading: false,
+  bg: false,
 };
 
 export const trackerReducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
+    case "TOGGLE_BG_MODE":
+      return {
+        ...state,
+        bg: !state.bg,
+      };
+
     case "FETCH_EXERCISES_DATA":
       return {
         ...state,
