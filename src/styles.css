@@ -50,6 +50,8 @@ body {
 
 .nav-link:hover {
   color: gray;
+  font-weight: bold;
+  transform: scale(20);
 }
 
 .dashboard {
@@ -174,7 +176,7 @@ body {
   justify-content: space-evenly;
   border-radius: 12px;
   width: 25rem;
-  margin: 1rem 2rem 1rem 0rem;
+  margin: 1rem 1rem 0rem 0rem;
   padding: 1rem;
   gap: 0.5rem;
   border: 1px solid gainsboro;
