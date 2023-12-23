@@ -36,6 +36,7 @@ export const Routers = () => {
         <p className="nav-link " onClick={handleRoute}>
           Goals
         </p>
+
         <span onClick={() => dispatch(toggleBgMode())} className="p-margin">
           {" "}
           {bg ? "🌝" : "🌚"}

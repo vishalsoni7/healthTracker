@@ -55,6 +55,7 @@ body {
 
 .p-margin {
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .nav-link {
