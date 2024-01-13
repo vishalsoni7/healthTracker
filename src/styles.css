@@ -134,7 +134,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .parent-div {
@@ -154,11 +154,15 @@ body {
   justify-content: space-evenly;
   border-radius: 12px;
   width: 13rem;
-  margin: 1rem 1rem 0rem 0rem;
+  margin: 0.5rem 0.5rem 0rem 0rem;
   padding: 1rem;
   gap: 0.5rem;
   border: 1px solid gainsboro;
   transition: all 150ms ease-in-out;
+}
+
+.exercise-div span {
+  font-size: 14px;
 }
 
 .exercise-div:hover {
@@ -212,12 +216,16 @@ body {
   justify-content: space-evenly;
   border-radius: 12px;
   width: 17rem;
-  margin: 1rem 1rem 0rem 0rem;
+  margin: 0.5rem 0.5rem 0rem 0rem;
   padding: 1rem;
   gap: 0.5rem;
   border: 1px solid gainsboro;
   transition: all 150ms ease-in-out;
   overflow: hidden;
+}
+
+.goal-div span {
+  font-size: 14px;
 }
 
 .goal-div:hover {
@@ -249,9 +257,10 @@ body {
 .food-input-div {
   display: flex;
   /* align-items: flex-start; */
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .food-input-div input {
