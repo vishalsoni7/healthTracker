@@ -6,8 +6,7 @@ export const toggleBgMode = () => {
   };
 };
 
-const base_url =
-  "https://343340c7-5a93-4eb0-95c3-857c06f16842-00-31k31o5uel9ij.pike.replit.dev";
+const base_url = "https://healthtracker-backend-v2.vercel.app";
 
 // fetch
 export const fetchExerciseData = () => async (dispatch) => {

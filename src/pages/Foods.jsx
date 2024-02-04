@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchFoodData, addFoodData, deleteFoodData } from "../actions";
+import { fetchFoodData, addFoodData, deleteFoodData } from "../../src/actions";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
