@@ -368,6 +368,7 @@ body {
 
   .nav-bar {
     gap: 1rem;
+    z-index: 1;
   }
 
   .nav-bar h3 {
