@@ -399,6 +399,7 @@ body {
 
   .exercise-input-div {
     flex-direction: column;
+    padding: 0;
   }
 
   .exercise-input-div input {
@@ -414,6 +415,31 @@ body {
 
   .global-div {
     gap: 1rem;
+  }
+
+  .goal-div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .food-input-div {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .food-input-div input {
+    width: -webkit-fill-available;
+    padding: 1rem;
+  }
+
+  .food-input-div button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .food-input-div select {
+    width: 100%;
+    padding: 1rem;
   }
 }
 
