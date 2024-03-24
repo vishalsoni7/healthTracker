@@ -11,6 +11,13 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.spinner-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .app-container {
   height: 100%;
   min-height: 100vh;
@@ -86,10 +93,6 @@ body {
 }
 
 .dashboard {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 2rem;
   position: absolute;
   top: 54%;
@@ -256,7 +259,6 @@ body {
 
 .food-input-div {
   display: flex;
-  /* align-items: flex-start; */
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
@@ -336,5 +338,74 @@ body {
   }
   50% {
     background-position: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .dashboard {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard-child-div {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .dashboard-child-div h4 {
+    font-size: 18px;
+  }
+
+  .landing-heading {
+    font-size: 32px;
+  }
+
+  .nav-bar {
+    gap: 1rem;
+  }
+
+  .nav-bar h3 {
+    line-height: normal;
+    margin: 0 0 0 1rem;
+  }
+
+  .p-margin {
+    margin-right: 1rem;
+  }
+
+  .dashboard-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .nav-bar {
+    font-size: xx-large;
+  }
+
+  .nav-bar h3 {
+    line-height: normal;
+    font-size: xx-large;
+  }
+
+  .landing-heading {
+    font-size: 84px;
+  }
+
+  .dashboard-child-div h4 {
+    font-size: x-large;
+    line-height: normal;
+  }
+
+  .dashboard-child-div span {
+    font-size: x-large;
   }
 }

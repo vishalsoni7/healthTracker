@@ -1,13 +1,12 @@
-import { useNavigate } from "react-router-dom";
 import { toggleBgMode } from "./actions";
-
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export const Routers = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const bg = useSelector((state) => state.bg);
+  const bgState = useSelector((state) => state.bg);
 
   const handleRoute = (e) => {
     if (e.target.textContent === "Home") {
@@ -18,7 +17,7 @@ export const Routers = () => {
   };
 
   return (
-    <div className={`nav-bar ${bg ? "nav-dark" : "nav-light"}`}>
+    <div className={`nav-bar ${bgState ? "nav-dark" : "nav-light"}`}>
       <h3> neog health </h3>
 
       <div className="navigation">
@@ -37,9 +36,12 @@ export const Routers = () => {
           Goals
         </p>
 
-        <span onClick={() => dispatch(toggleBgMode())} className="p-margin">
-          {" "}
-          {bg ? "🌝" : "🌚"}
+        <span className="p-margin">
+          <DarkModeSwitch
+            checked={bgState}
+            onChange={() => dispatch(toggleBgMode())}
+            size={20}
+          />
         </span>
       </div>
     </div>
